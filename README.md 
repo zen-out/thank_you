@@ -1,0 +1,25 @@
+# Key Features
+
+- utils 
+    - [ ] init_app.js
+    - [ ] init_module.js
+- ViewRouter is always in root 
+- Navbar is always in main 
+- Header is always in main 
+- Footer is always in main 
+- css sheets should be in an array 
+- scripts should be in an array 
+
+```hbs
+
+    {{!-- Import page title from ViewRouter.js --}}
+    <title>{{title}}</title>
+    
+    {{!-- Import CSS from ViewRouter.js --}}
+    {{#each css}}
+        <link rel="stylesheet" href="../../css/{{this}}" /> 
+    {{/each}}
+```
+
+- javascript files always correspond to the handlebars file name 
+
